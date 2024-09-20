@@ -1,6 +1,9 @@
-
 pipeline {
     agent any
+
+    tools {
+        maven 'Homebrew Maven' // Käytä nimeä, jonka annoit asennukselle
+    }
 
     stages {
         stage('Checkout') {
@@ -35,4 +38,3 @@ pipeline {
         }
     }
 }
-
